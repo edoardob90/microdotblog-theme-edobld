@@ -3,23 +3,31 @@
     <header>
       <!-- Title and Publication Date -->
       {{ if .Title }}
-        <h1 class="text-xl font-bold p-name"><a class="u-url" href="{{ .RelPermalink }}">{{ .Title }}</a></h1>
-        <time
-          class="dt-published"
-          datetime="{{ .PublishDate.Format "2006-01-02 15:04:05 -0700" }}"
-        >
-          {{ humanize (dateFormat "Monday, 2 Jan" .PublishDate) }}
-        </time>
+        <h1 class="text-xl font-bold p-name">
+          <a class="u-url" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h1>
+        <span class="font-sans">
+          <time
+            class="dt-published"
+            datetime="{{ .PublishDate.Format "2006-01-02 15:04:05 -0700" }}"
+          >
+            {{ humanize (dateFormat "Monday, 2 Jan" .PublishDate) }}
+          </time>
+        </span>
       {{ else }}
         <h1 class="font-bold">
           <time
             class="dt-published"
             datetime="{{ .PublishDate.Format "2006-01-02 15:04:05 -0700" }}"
           >
-            <a class="u-url" href="{{ .RelPermalink }}">{{ humanize (dateFormat "Monday, 2 Jan" .PublishDate) }}</a>
+            <a class="u-url" href="{{ .RelPermalink }}">
+              {{ humanize (dateFormat "Monday, 2 Jan" .PublishDate) }}
+            </a>
           </time>
         </h1>
       {{ end }}
+
+      {{ partial "post-categories.html" . }}
 
 
       <!-- 
@@ -46,7 +54,10 @@
     <div class="e-content entry-body">{{ .Content }}</div>
 
     {{ if .Site.Params.include_conversation }}
-      <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
+      <script
+        type="text/javascript"
+        src="https://micro.blog/conversation.js?url={{ .Permalink }}"
+      ></script>
     {{ end }}
   </article>
 {{ end }}
