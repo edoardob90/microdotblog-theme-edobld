@@ -15,7 +15,10 @@
         </time>
       </a>
 
-      <section class="e-content entry-body">{{ .Content }}</section>
+      <section class="p-summary entry-body">{{ .Summary | safeHTML }}</section>
+      {{ if .Truncated }}
+        <p><a href="{{ .Permalink }}" class="u-url">→</a></p>
+      {{ end }}
     {{ else }}
       <h2 class="font-bold">
         <a href="{{ .Permalink }}" class="u-url">

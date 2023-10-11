@@ -15,6 +15,10 @@
     @apply list-circle pl-6 my-2;
   }
 
+  ul#categories {
+    @apply list-none pl-0;
+  }
+
   article ol {
     counter-reset: ol-counter;
     @apply list-none pl-8;

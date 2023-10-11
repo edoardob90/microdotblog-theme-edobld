@@ -1,5 +1,5 @@
 {{ if .Params.categories }}
-  <ul class="post-tags font-sans list-none pl-0">
+  <ul id="categories" class="post-tags font-sans">
     {{ range .Params.categories }}
       {{ $href := print (absURL "categories/") (urlize .) }}
       <li class="inline"><a href="{{ $href }}">#{{ . }}</a></li>

@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - "layouts/**"
-      - "assets-src/css/styles.css"
+      - "_assets/css/styles.css"
       - "tailwind.config.js"
       - "exampleSite/content/**"
   workflow_dispatch:
