@@ -1,0 +1,41 @@
+name: Build CSS with Tailwind
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "layouts/**"
+      - "assets-src/css/styles.css"
+      - "tailwind.config.js"
+      - "exampleSite/content/**"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      CI_COMMIT_AUTHOR: "github-actions[bot]"
+      CI_COMMIT_MESSAGE: "Build CSS with Tailwind"
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build CSS with Tailwind
+        run: npm run build:css
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          git config --global user.email "github-actions@users.noreply.github.com"
+          git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
+          git push
