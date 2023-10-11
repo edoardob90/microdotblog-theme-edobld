@@ -5,7 +5,7 @@
         <a class="p-name" href="{{ .RelPermalink }}">{{ .Title }}</a>
       </h2>
 
-      <a href="{{ .Permalink }}" class="u-url">
+      <a href="{{ .Permalink }}" class="u-url font-sans">
         <time
           class="dt-published"
           datetime="{{ .Date.Format "2006-01-02T15:04:05.000-07:00" }}"
@@ -17,7 +17,7 @@
 
       <section class="e-content entry-body">{{ .Content }}</section>
     {{ else }}
-      <h2 class="font-bold">
+      <h2 class="font-bold font-sans">
         <a href="{{ .Permalink }}" class="u-url">
           <time
             class="dt-published"

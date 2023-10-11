@@ -2,3 +2,7 @@
 /exampleSite/public
 /exampleSite/hugo_stats.json
 .DS_Store
+pnpm-lock.yaml
+microblog_head.html
+custom_footer.html
+custom.css
