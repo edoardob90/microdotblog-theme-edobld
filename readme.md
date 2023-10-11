@@ -1,12 +1,4 @@
-# Johanl.se for Micro.blog
-
-The theme used for [my little corner of the internet](https://www.johanl.se).
-
-## Getting Started
-
-### Preqrequisites
-
-### Installing
+# Personal theme for Micro.blog
 
 ## Deployment
 
@@ -18,4 +10,5 @@ npm run build:css
 
 ## Acknowledgments
 
+- [Johanl.se Micro.blog](https://www.johanl.se/)
 - [Hugo Starter Theme with Tailwind CSS](https://github.com/dirkolbrich/hugo-tailwindcss-starter-theme)
