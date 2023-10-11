@@ -11,7 +11,7 @@
     "build:css": "npx tailwindcss -i ./_assets/css/styles.css -o ./assets/css/styles.css"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^4.x",
+    "@fullhuman/postcss-purgecss": "^5.x",
     "@tailwindcss/aspect-ratio": "^0.x",
     "@tailwindcss/forms": "^0.x",
     "@tailwindcss/line-clamp": "^0.x",
