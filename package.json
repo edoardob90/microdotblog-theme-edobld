@@ -1,5 +1,5 @@
 {
-  "name": "microdotblog-johanl",
+  "name": "microdotblog-theme-edobld",
   "version": "0.3.0",
   "description": "Starter files for a Hugo theme with Tailwindcss",
   "main": "index.js",
@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "hugo --gc",
-    "build:css": "npx tailwindcss -i ./assets-src/css/styles.css -o ./assets/css/dist.css --watch"
+    "build:css": "npx tailwindcss -i ./assets-src/css/styles.css -o ./assets/css/styles.css --watch"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.x",

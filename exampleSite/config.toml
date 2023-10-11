@@ -1,6 +1,6 @@
-theme = "johanl-theme"
-languageCode = "sv-se"
-defaultContentLanguage = "sv"
+theme = "microdotblog-theme-edobld"
+languageCode = "en-us"
+defaultContentLanguage = "en"
 baseurl = "http://example.com/"
 title = "Hugo Tailwindcss Starter"
 

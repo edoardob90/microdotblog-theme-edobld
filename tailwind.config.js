@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        serif: ["Charter", ...defaultTheme.fontFamily.serif],
+        serif: ['"Valkyrie B"', ...defaultTheme.fontFamily.serif],
+        sans: ["Concourse", ...defaultTheme.fontFamily.sans],
       },
       listStyleType: {
         circle: "circle",

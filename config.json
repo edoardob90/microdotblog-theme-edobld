@@ -87,8 +87,8 @@
     }
   },
   "enableRobotsTXT": true,
-  "languageCode": "sv",
-  "defaultContentLanguage": "sv",
+  "languageCode": "en",
+  "defaultContentLanguage": "en",
   "paginate": 25,
   "params": {
     "description": "Follow <a href=\"https://micro.blog/[USERNAME]\">@[USERNAME] on Micro.blog</a>.",
