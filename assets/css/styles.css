@@ -469,6 +469,11 @@ article.entry ul {
   padding-left: 1.5rem;
 }
 
+ul#categories {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
 article ol {
   counter-reset: ol-counter;
   list-style-type: none;
@@ -1017,10 +1022,6 @@ h2 {
   padding-bottom: 0.5rem;
 }
 
-.pl-0 {
-  padding-left: 0px;
-}
-
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1047,6 +1048,11 @@ h2 {
 
 .font-sans {
   font-family: Concourse, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-4xl {
