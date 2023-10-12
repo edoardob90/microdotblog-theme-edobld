@@ -65,7 +65,8 @@
     @apply underline decoration-red-800 dark:decoration-red-500 decoration-wavy decoration-1 underline-offset-[5px];
   }
 
-  a:hover {
+  a:hover,
+  label.margin-toggle:hover {
     @apply bg-red-100 rounded-sm dark:bg-slate-600;
   }
 
@@ -92,6 +93,38 @@
 
   .entry-body img:first-child {
     @apply mt-2;
+  }
+
+  div.footnotes,
+  span.marginnote {
+    @apply font-sans text-base
+  }
+
+  .marginnote {
+    @apply relative float-right clear-right w-1/2 my-0 ml-0 mr-[-60%];
+  }
+
+  label.margin-toggle,
+  input.margin-toggle {
+    @apply hidden;
+  }
+
+  @media (max-width: 768px) {
+    .marginnote {
+      @apply hidden;
+    }
+
+	  .margin-toggle:checked + .marginnote {
+      @apply block float-left clear-both left-4 w-[95%] my-4 mx-0;
+	  }
+
+    label.margin-toggle {
+      @apply inline;
+    }
+
+    label {
+      @apply cursor-pointer;
+    }
   }
 }
 
