@@ -6,9 +6,12 @@
     {{ block "title" . }}
       {{ if .IsHome }}
         {{ .Site.Title }}
-      {{ else }}
-        {{ .Site.Title }} –
+      {{ else if .Title }}
+        {{ .Site.Title }} |
         {{ .Title }}
+      {{ else }}
+        {{ .Summary | plainify | truncate 40 }} |
+        {{ .Site.Title }}
       {{ end }}
     {{ end }}
   </title>
@@ -36,7 +39,8 @@
       rel="preload"
       href="{{ .RelPermalink }}"
       as="font"
-      crossorigin="anonymous"
+      type="font/woff2"
+      crossorigin
     />
   {{ end }}
 

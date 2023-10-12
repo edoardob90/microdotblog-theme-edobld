@@ -153,7 +153,7 @@ div.highlight pre {
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
-  font-display: auto;
+  font-display: swap;
   src: url('/fonts/concourse_3_regular.woff2') format('woff2');
 }
   
@@ -162,7 +162,7 @@ div.highlight pre {
   font-style: italic;
   font-weight: normal;
   font-stretch: normal;
-  font-display: auto;
+  font-display: swap;
   src: url('/fonts/concourse_3_italic.woff2') format('woff2');
 }
   
@@ -171,7 +171,7 @@ div.highlight pre {
   font-style: normal;
   font-weight: bold;
   font-stretch: normal;
-  font-display: auto;
+  font-display: swap;
   src: url('/fonts/concourse_3_bold.woff2') format('woff2');
 }
   
@@ -180,7 +180,7 @@ div.highlight pre {
   font-style: italic;
   font-weight: bold;
   font-stretch: normal;
-  font-display: auto;
+  font-display: swap;
   src: url('/fonts/concourse_3_bold_italic.woff2') format('woff2');
 }
 
@@ -189,7 +189,7 @@ div.highlight pre {
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
-  font-display: auto;
+  font-display: swap;
   src: url('/fonts/valkyrie_b_regular.woff2') format('woff2');
 }
   
@@ -198,7 +198,7 @@ div.highlight pre {
   font-style: italic;
   font-weight: normal;
   font-stretch: normal;
-  font-display: auto;
+  font-display: swap;
   src: url('/fonts/valkyrie_b_italic.woff2') format('woff2');
 }
   
@@ -207,7 +207,7 @@ div.highlight pre {
   font-style: normal;
   font-weight: bold;
   font-stretch: normal;
-  font-display: auto;
+  font-display: swap;
   src: url('/fonts/valkyrie_b_bold.woff2') format('woff2');
 }
   
@@ -216,7 +216,7 @@ div.highlight pre {
   font-style: italic;
   font-weight: bold;
   font-stretch: normal;
-  font-display: auto;
+  font-display: swap;
   src: url('/fonts/valkyrie_b_bold_italic.woff2') format('woff2');
 }
 
