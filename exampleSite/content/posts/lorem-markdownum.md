@@ -2,12 +2,14 @@
 author: Dirk Olbrich
 title: Lorem Markdownum
 date: 2021-01-07
+categories:
+  - test
 ---
 
 ## Amens nitentior vires
 
 Lorem markdownum Argo est praebebant Andros erat, tibi parte montibus erunt
-venis tacita spernimus more. Olim erat Aiax *dixi factas* potens. Perque natus
+venis tacita spernimus more. Olim erat Aiax _dixi factas_ potens. Perque natus
 ipsa [potenti](http://fugias.com/illa.php); nunc parte precor in mortalis manant
 bellica, umbrosaque et. Inrita videtur regnum, in est vulnere inductae Ilion et
 feruntur Latiae famulus nec dederat uteroque lenita **fraternaque horrenda

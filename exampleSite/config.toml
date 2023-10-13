@@ -24,3 +24,6 @@ copyright = "Copyright © 2019, Dirk Olbrich, all rights reserved."
 [markup]
   [markup.highlight]
     style = "dracula"
+
+[taxonomies]
+  category = "categories"

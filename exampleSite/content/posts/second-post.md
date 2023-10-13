@@ -2,6 +2,8 @@
 author: Dirk Olbrich
 title: A second Post
 date: 2019-05-14
+categories:
+  - pinned
 ---
 
 A lot more Wise words.
