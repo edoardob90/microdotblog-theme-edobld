@@ -537,7 +537,8 @@ article blockquote {
   }
 }
 
-article.entry .entry-body a {
+article.entry .entry-body a,
+  div.reply-buttons li a {
   text-decoration-line: underline;
   text-decoration-color: #991b1b;
   text-decoration-style: wavy;
@@ -546,7 +547,8 @@ article.entry .entry-body a {
 }
 
 @media (prefers-color-scheme: dark) {
-  article.entry .entry-body a {
+  article.entry .entry-body a,
+  div.reply-buttons li a {
     text-decoration-color: #ef4444;
   }
 }
@@ -792,6 +794,10 @@ label.margin-toggle,
   margin-left: 1rem;
 }
 
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
 .mr-8 {
   margin-right: 2rem;
 }
@@ -1005,6 +1011,10 @@ label.margin-toggle,
   padding-bottom: 0.5rem;
 }
 
+.pl-0 {
+  padding-left: 0px;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1072,6 +1082,10 @@ label.margin-toggle,
 
 .italic {
   font-style: italic;
+}
+
+.leading-8 {
+  line-height: 2rem;
 }
 
 .text-gray-700 {
