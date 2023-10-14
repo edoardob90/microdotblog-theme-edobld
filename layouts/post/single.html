@@ -55,8 +55,8 @@
   </article>
 
   {{ if or (templates.Exists "partials/reply-by-email.html") (templates.Exists "partials/conversation-link.html") (templates.Exists "partials/plugin_tinylytics.html") }}
-    <div class="reply-buttons">
-      <ul>
+    <div class="space-y-32 reply-buttons">
+      <ul class="list-none pl-0 inline whitespace-nowrap mr-1 leading-8">
         {{ if templates.Exists "partials/plugin_tinylytics.html" }}
           <li><button class="tinylytics_kudos">Kudos</button></li>
         {{ end }}
